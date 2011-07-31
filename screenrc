@@ -1,5 +1,67 @@
-attrcolor b ".I"
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-defbce "on"
-term "xterm-256color"
 # termcapinfo xterm*|rxvt*|kterm*|Eterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+
+
+# Variables - Boolean
+autodetach          on
+crlf                off
+deflogin            on
+defsilence          off
+defutf8             on
+defbce              on
+hardcopy_append     off
+nethack             on 
+startup_message     off
+vbell               off
+verbose             on
+nonblock            on
+
+# Variables - Other
+zombie              cr
+defscrollback       2500
+attrcolor           b ".I"
+termcapinfo         xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+term                "xterm-256color"
+caption always "%?%F%{-b bk}%:%{-b bb}%?%C|%D|%M %d|%?%F%{-b rk}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<"
+
+# Function key maps to selecting window
+bindkey -k k1 select 1
+bindkey -k k2 select 2
+bindkey -k k3 select 3
+bindkey -k k4 select 4
+bindkey -k k5 select 5
+bindkey -k k6 select 6
+bindkey -k k7 select 7
+bindkey -k k8 select 8
+bindkey -k k9 select 9
+bindkey -k k; select 0
+
+bindkey "^[[5;2~" eval "copy" "stuff ^u"
+bindkey -m "^[[5;2~" stuff ^u
+bindkey -m "^[[6;2~" stuff ^d
+
+# Removing dangerous bindings and remapping
+bind  h hardcopy
+bind  k
+bind  ^k
+bind  .
+bind  ^\
+bind  \\
+bind  ^h
+
+bind '}' history
+bind 'L'
+bind 'I' login on
+bind 'O' login off
+bind 'K' kill
+
+# Start window numbering at 1
+bind c screen 1
+bind 0 select 10
+
+# Use Vim-like keys to switch regions
+bind ^j focus down
+bind ^k focus up
+bind ^t focus top
+bind ^b focus bottom
+
+
