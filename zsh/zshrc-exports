@@ -2,3 +2,4 @@
 export TERM='xterm-256color'
 export GOPATH=$HOME/devel/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export DOTHOME=$HOME/devel/dotfiles

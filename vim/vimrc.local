@@ -1,0 +1,6 @@
+fixdel
+colorscheme spacegray
+
+set nospell
+set term=screen-256color
+

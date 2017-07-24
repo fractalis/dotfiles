@@ -1,4 +1,4 @@
 # ----- ALIASES ------------
 alias ls='ls --color'
 alias gits='git status'
-alias rchome="cd $HOME/devel/rcfiles"
+alias dothome="cd $HOME/devel/dotfiles"
