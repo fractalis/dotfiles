@@ -1,0 +1,7 @@
+[user]
+	email = srallya@gmail.com
+	name = Scott Rallya
+[push]
+	default = simple
+[core]
+	editor = vim
