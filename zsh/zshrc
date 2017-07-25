@@ -4,10 +4,16 @@ fi
 
 source ~/.zplug/init.zsh
 
+source $HOME/devel/dotfiles/zsh/zshrc-exports
+source $HOME/devel/dotfiles/zsh/zshrc-aliases
+source $HOME/devel/dotfiles/zsh/zshrc-functions
+source $HOME/devel/dotfiles/zsh/zshrc-config
+
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug plugins/git, from:oh-my-zsh
+zplug plugins/ssh-agent, from:oh-my-zsh
 
 zplug "jamiewilson/predawn-shell", as:theme
 #zplug "eendroroy/alien-minimal", as:theme
@@ -35,5 +41,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source $HOME/devel/dotfiles/zsh/zshrc-exports
-source $HOME/devel/dotfiles/zsh/zshrc-aliases
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

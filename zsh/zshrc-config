@@ -1,0 +1,4 @@
+
+# ssh-agent config
+
+zstyle :omz:plugins:ssh-agent identities id_odin

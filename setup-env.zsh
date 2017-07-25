@@ -47,9 +47,9 @@ do_link() {
   then
     notice "Removing $dst"
     rm $dst
-    info "Linking $dst to $src"
-    ln -s "$1" "$2"
   fi
+  info "Linking $dst to $src"
+  ln -s "$1" "$2"
 }
 
 update_configs() {

@@ -1,0 +1,23 @@
+# ----------  Logging Functions ---------- #
+info () {
+  print -P "\r [ %F{blue}..%f ] $1"
+}
+
+notice () {
+  print -P "\r [ %F{202}!!%f ] $1"
+}
+
+user () {
+  print -P "\r [ %F{143}??%f ] $1"
+}
+
+success () {
+  print -P "\r [ %F{green}OK%f ] $1"
+}
+
+fail () {
+  print -P "\r [ %F{red}FAIL%f ] $1"
+  echo ''
+  exit
+}
+# ---------------------------------------- #
