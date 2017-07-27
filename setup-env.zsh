@@ -9,6 +9,7 @@ CONFIGS=(
 "$DOTFILES_HOME/vim/vimrc.before:$HOME/.vimrc.before"
 "$DOTFILES_HOME/vim/vimrc.bundles:$HOME/.vimrc.bundles"
 "$DOTFILES_HOME/vim/vimrc.local:$HOME/.vimrc.local"
+"$DOTFILES_HOME/vim/vimrc.bundles.local:$HOME/.vimrc.bundles.local"
 "$DOTFILES_HOME/gitconfig:$HOME/.gitconfig"
 "$DOTFILES_HOME/tmux.conf:$HOME/.tmux.conf"
 )

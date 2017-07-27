@@ -1,0 +1,15 @@
+Bundle "puppetlabs/puppet-syntax-vim"
+Bundle "regedarek/ZoomWin"
+Bundle "junegunn/vim-easy-align"
+
+ Bundle "andres-arana/vim-nearley"
+ Bundle "rodjek/vim-puppet"
+"
+Bundle "fidian/hexmode"
+Bundle "ekalinin/Dockerfile.vim"
+Bundle "yoppi/fluentd.vim"
+
+Bundle "robbles/logstash.vim"
+
+Bundle "slashmili/alchemist.vim"
+
